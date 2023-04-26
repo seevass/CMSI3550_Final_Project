@@ -1,6 +1,6 @@
 import net from "net";
 
-const API_KEY = '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';
+const API_KEY = 'INSERT YOUR API KEY HERE AND LEAVE THE SINGLE QUOTES';
 const API_URL = 'https://api.openai.com/v1/completions';
 
 const server = net.createServer((socket) => {
