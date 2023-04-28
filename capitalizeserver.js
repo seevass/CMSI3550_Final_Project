@@ -1,6 +1,6 @@
 import net from "net";
 
-const API_KEY = 'INSERT YOUR API KEY HERE AND LEAVE THE SINGLE QUOTES';
+//const API_KEY = 'INSERT YOUR API KEY HERE AND LEAVE THE SINGLE QUOTES';
 const API_URL = 'https://api.openai.com/v1/completions';
 
 const server = net.createServer((socket) => {
@@ -26,7 +26,7 @@ const server = net.createServer((socket) => {
         'Authorization': `Bearer ${API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'text-davinci-002',
+        model: 'text-davinci-003',
         prompt: buffer.toString(),
         temperature: 0.7,
         max_tokens: 2048,
